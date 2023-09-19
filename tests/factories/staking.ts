@@ -161,6 +161,7 @@ export function mockStakeSlashed(
   )
 
   let staking = mockEvent.address
+
   createMockedFunction(staking, 'stakes', 'stakes(address):(uint256,uint256,uint256,uint256)')
     .withArgs([ethereum.Value.fromAddress(indexer)])
     .returns([
